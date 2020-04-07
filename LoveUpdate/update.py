@@ -29,9 +29,9 @@ def update(pack, lastupdate):
         code=checkaccess(pack)
         if not code:
             print('Error fetching internet connection for autoupdate. Moving on')
-            return True
+            return True, tdy
         code=uppack(pack)
         if code:
             print('Error autoupdating package from pip. Moving on')
-            return True
-        return False, tdy
+            return True, tdy
+    return False, tdy
