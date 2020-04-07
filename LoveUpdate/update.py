@@ -25,13 +25,16 @@ def getdate():
 
 def update(pack, lastupdate):
     tdy=getdate()
+    hasupdated=False
     if lastupdate!=tdy:
         code=checkaccess(pack)
         if not code:
             print('Error fetching internet connection for autoupdate. Moving on')
-            return True, tdy
+            return True, hasupdated, tdy
         code=uppack(pack)
         if code:
             print('Error autoupdating package from pip. Moving on')
-            return True, tdy
-    return False, tdy
+            return True, hasupdated, tdy
+        else:
+            hasupdated=True
+    return False, hasupdated, tdy
