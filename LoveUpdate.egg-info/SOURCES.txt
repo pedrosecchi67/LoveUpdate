@@ -2,6 +2,7 @@ README.md
 setup.cfg
 setup.py
 LoveUpdate/__init__.py
+LoveUpdate/report.py
 LoveUpdate/update.py
 LoveUpdate.egg-info/PKG-INFO
 LoveUpdate.egg-info/SOURCES.txt

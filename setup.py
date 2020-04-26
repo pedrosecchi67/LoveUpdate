@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="LoveUpdate",
-    version="0.0.2",
+    version="0.0.3",
     author="Pedro de Almeida Secchi",
     author_email="pedrosecchimail@gmail.com",
     description="Autoupdate package for LovelacePM",
@@ -20,6 +20,6 @@ setup(
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Operating System :: OS Independent",
     ],
-    install_requires=['requests', 'pip-check', 'datetime'],
+    install_requires=['requests', 'pip-check', 'datetime', 'pyfiglet'],
     python_requires='>=3.6',
 )

@@ -17,7 +17,7 @@ def checkaccess(pack):
 
 def uppack(pack):
     print('Updating '+pack+':')
-    return subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', pack])
+    return subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', '-v', pack])
 
 def getdate():
     today=date.today()
